@@ -1,0 +1,102 @@
+
+
+body {    
+    padding: 0 2.5%;
+    background-color: #eeeeee;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+label {
+    display: block;
+    background-color: coral;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 2px;
+    width: fit-content;
+    margin: 0.75em 0;
+}
+
+label:hover {
+    background-color: salmon;
+}
+
+.compare {
+    display: flex;    
+    justify-content: space-between;
+}
+
+.anime {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    padding: 5% 0;
+}
+
+.anime img{
+    width: 225px;
+    height: 320px;
+    border-radius: 5px;
+    background-color: gray;
+    border: none;
+    transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1);
+    cursor: pointer;
+}
+
+.anime img:hover {
+    transform: scale(1.1);
+}
+
+h2, h3 {
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin: 0.75em 0;
+}
+
+h3 {
+    font-size: 1em;
+    margin: 0;
+}
+
+.progress {
+    background-color: gray;
+    height: 1.5em;
+    width: 100%;
+}
+
+.progress div {
+    background-color: coral;
+    text-align: center;
+    color: white;
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+table {
+    width: 100%;
+}
+
+th, td {
+    padding: 0.25em;
+}
+
+thead {
+    background-color: lightsalmon;
+    color: white;
+}
+
+tbody td {
+    background-color: lightgray;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAL Sorter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>MAL Sorter</h1>
+    <p>Import your anime list, and click on the better anime from the pair presented until it's done</p>
+    <label>Choose Your MAL XML File<input type="file" id="file-input" accept=".xml"></label>
+    <a href="https://myanimelist.net/panel.php?go=export">Export Your List</a>
+    <section>
+        <p>Current Pass: <span id="pass-count">0</span></p>
+        <div class="progress"><div id="compare-progress"></div></div>
+    </section>
+    <section class="compare">
+        <div id="anime-a" class="anime">
+            <img>
+            <h2></h2>
+            <h3></h3>
+        </div>
+        <div id="anime-b" class="anime">
+            <img>
+            <h2></h2>
+            <h3></h3>
+        </div>
+    </section>
+    <section class="result hidden">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Sorted Anime List</th>
+                </tr>
+                <tr>
+                    <td>Title</td>
+                    <td>Score</td>
+                </tr>
+            </thead>
+            <tbody id="sorted-body">
+            </tbody>
+        </table>
+    </section>
+</body>
+</html>
